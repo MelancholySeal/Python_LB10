@@ -7,8 +7,8 @@ if __name__ == "__main__":
     C = {'j', 'k', 'l', 'y'}
     D = {'i', 'j', 's', 't', 'u', 'y', 'z'}
 
-    X = (A & B) | (B & C)
-    Y = (A & (set() if not B else set()) | (D - C))
+    X = (A & C) | (B & C)
+    Y = (A - B) | (D - C)
 
     print("Результат X:", X)
     print("Результат Y:", Y)
